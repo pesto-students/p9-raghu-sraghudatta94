@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+body{
+  height:500px;
+  width:500px;
+  border:0;
+display: inline-block;
+
+}
+.app{
+  position:absolute;
+height:50px;
+width:50px;
+transition-property: all;
+transition-duration:2s;
+transition-timing-function:ease-in-out;
+animation-name:slide;
+}
+section:hover #red{
+      transform: rotate(90deg);
+    transform-origin: left top;
+   
+  }
+  section:hover #blue{
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  }
+    section:hover #yellow{
+  transform: rotate(-90deg);
+   transform-origin: right top;
+  }
+    section:hover #green{
+  transform: rotate(90deg);
+   transform-origin: right bottom;
+  }
+
+</style>
+</head>
+<body>
+
+
+<section style="text-align: center;">
+
+
+<div class="app" id=red style="background-color:red;top:200px;left:250px"> </div>
+<div class="app" id=blue style="background-color:blue;top:250px;left:250px;"> </div>
+<div class="app" id=yellow style="background-color:yellow;left:300px;top:200px"> </div>
+<div class="app" id=green style="background-color:green;top:250px;left:300px;"> </div>
+</section>
+
+
+</body>
+</html>
