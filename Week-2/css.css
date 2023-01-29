@@ -1,0 +1,54 @@
+.container{
+  background-color:pink;
+  display:grid;
+  grid-template-rows: 30px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap:12px;
+  column-gap:12px;
+  margin:0;
+}
+.item{
+background-color:pink;
+
+}
+
+.item1{
+  background-color:pink;
+  color:black;
+  font-size:30px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align:center;
+}
+
+.item8{
+  align-items: center;
+  justify-self:center;
+  width:50%;
+  height:80%;
+
+}
+
+#image{
+background-image:url('https://th.bing.com/th/id/R.efbc7f8d120ed6d7789603ba4a28ee6e?rik=wY1gw7DA%2behc0g&riu=http%3a%2f%2fwww.sociobee.in%2fwp-content%2fuploads%2f2020%2f04%2fWriting.jpg&ehk=Hd4r3qOOJ%2bHF1z%2blB%2f6VfhblBfQ5UwHV3qxC3SOgRYY%3d&risl=&pid=ImgRaw&r=0');
+background-size: 100% 100%;
+border:0;
+}
+
+.Inpu{
+font-size:40px;
+font-family: Arial, sans-serif;
+color:Red;
+}
+.Input-button{
+background-color:red;
+}
+.Input-button:hover{
+background-color:yellow;
+}
+
+.Inpu{
+font-size:40px;
+font-family: Arial, sans-serif;
+color:Red;
+}
