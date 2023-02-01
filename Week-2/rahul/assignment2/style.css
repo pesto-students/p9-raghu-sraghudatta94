@@ -1,0 +1,64 @@
+.rectangle{
+    height: 120px;
+    width: 100px;
+    transition: 1s all;
+}
+.rectangle:hover{
+    height: 100px;
+    width: 120px;
+    transition: 1s all;
+}
+.red{
+    background-color: red;
+    transform-origin: top left;
+}
+
+.red:hover{ 
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.yellow:hover{ 
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.blue:hover{
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+
+.green{
+    background-color: green;
+    transform-origin: bottom right;
+}
+
+.green:hover{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.center{
+    position: absolute;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+}
+
