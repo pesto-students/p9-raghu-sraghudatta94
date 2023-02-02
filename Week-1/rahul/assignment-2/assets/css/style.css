@@ -1,0 +1,174 @@
+body {
+    font-family: 'Lato';
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    top: 0;
+    width: 100%;
+    background-color: #454545;
+    color: #FFFFFF;
+}
+
+.header .row { 
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+}
+
+.header .logo-img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.header .head-title {
+    width: 80%;
+    margin-left: auto; 
+}
+
+.head-title p {
+    margin: 0px;
+}
+
+.header .control-btn {
+    display: flex;
+    padding-top: 8%;
+}
+
+.control-btn .icon {
+    padding: 5px 15px 5px 5px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: calc(100vh - 150px);
+}
+
+/* /Navigation CSS/ */
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0; 
+    height: 100%;
+    z-index: 2; 
+    overflow-y: auto;
+    background-color: #F0F0F0;
+    width: fit-content;
+    padding: 5px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 5px;
+}
+.nav li {
+    padding: 10px;
+    text-align: center;
+    padding: 10px 10px 50px 10px;
+} 
+   
+.main-content {
+    margin: 1% 5% 10% 6%; 
+    text-align: center;
+}
+ 
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  td, th { 
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #F0F0F0;
+  }
+
+  a.sync-btn {
+    border: 1px solid black;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footer {
+    position: relative;
+    background-color: #43689B;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.icon-list {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.footer .row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    margin-left: 20px;
+}
+
+.footer-text p {
+    color: #FFFFFF;
+}
+
+.footer img {
+    width: 5%;
+    margin: 10px;
+}
+
+.icon-list a {
+    color: #FFFFFF;
+}
+
+.icon-list .icon {
+    padding: 38px 50px 38px 50px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+
+    .nav {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    main {
+        margin: 50px 0 0 0;
+    }
+}
