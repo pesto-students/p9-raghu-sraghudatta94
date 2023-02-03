@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+button.checkout:hover
+{
+ background-color:green;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<center>
+
+<h1>  Summary   </h1>
+<p> The phrase "Lorem ipsum dolor sit amet consectetuer" appears in Microsoft Word online Help.
+<br> This phrase has the appearance of an intelligent Latin idiom. Actually, it is nonsense.
+</br> 
+</p>
+
+</center>
+
+<div class="row">
+  <div class="column" style="background-color: rgb(255, 99, 71);">
+   <p> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit ...," 
+       which translates as, "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+</p>
+    <img src=" D:\pesto code\mountainskies.jpg" alt="Girl in a jacket" width="655" height="200">
+ 
+  </div>
+  <div class="column" style="Background-color: rgb(60, 179, 113);">
+  <article>
+<p> Chances are that you've seen "lorem ipsum" text in your travels across the web. 
+<br>It often appears in graphic design materials such as WordPress themes and publishing mockups. </br>
+</p>
+</article>
+<article>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
+</p>
+</article>
+
+<article>
+<p> Chances are that you've seen "lorem ipsum" text in your travels across the web. 
+<br>It often appears in graphic design materials such as WordPress themes and publishing mockups. </br>
+</p>
+</article>
+
+    
+  </div>
+</div>
+
+<br>  </br>
+<br>  </br>
+<form action="/action_page.php" method="get">
+<p>Title:</p>
+   <input type="radio" id="Mr" name="Mr" checked>
+  <label for="Mr">Mr.</label>
+  <input type="radio" id="Mrs" name="Mrs">
+  <label for="Mrs">Mrs.</label>
+  <input type="radio" id="Miss" name="Miss">
+  <label for="Miss">Miss</label>
+<br>  </br>
+  <label for="fname">First name:</label>
+  <input type="text" size="65" id="fname" name="fname"  required
+  pattern="/^[a-zA-ZÀ-ÖØ-öø-ÿ+\.+\- ]+$/i"> <br><br>
+  <label for="lname">Last name:</label>
+  <input type="text"  size="65" id="lname" name="lname"><br><br>
+  <label for="Email">Email:</label>
+  <input type="text" size="65" id="Email" name="Email" required><br><br>
+  <label for="Phone Number">Phone Number:</label>
+  <input type="text" id="Phone Number" name="Phone Number"><br><br>
+  <label for="Password">Password:</label>
+  <input type="text" size="20" id="Password" name="Password" required><br><br>
+  <label for="Confirm your Password">Confirm your Password:</label>
+  <input type="text" size="20" id="Confirm your Password" name="Confirm your Password" required><br><br>
+  <label for="Country">Choose a country name:</label>
+  <select>  
+	<option value = "Canada"> Canada   </option>  
+	<option value = "India"> India   </option>  
+	<option value = "SriLanka"> SriLanka  </option>  
+	<option value = "Nepal"> Nepal </option>  
+</select>  
+
+<br> </br>
+<input type="checkbox" id="agree" name="agree" value="agree">
+<label for="agree"> I agree to</label>
+<a href="terms and conditions" target="_blank">terms and condition</a> 
+
+<br> </br>
+<br>  </br>
+
+  <input type="Submit"  :hover {
+    border: 1px solid #665;
+    color: #999;
+}
+ style="text-align: center; Bold" value="SignUp">
+</form>
+
+</body>
+
+<br>  </br>
+<br>  </br>
+<br>  </br>
+<br>  </br>
+<br>  </br>
+
+<footer>
+  <p>Author: Rekha Mohan</p>
+  <p><a href="mailto:rekha mohan">rekha--mohan@yahoo.com</a></p>
+</footer>
+</html>
