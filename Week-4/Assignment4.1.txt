@@ -1,0 +1,86 @@
+var p = new Promise((resolve,reject) => {
+
+let num = Math.floor((Math.random() * 100) + 1);
+
+ if ( num%5 == 0 ) {
+    resolve("OK");
+  } else {
+    reject("ERROR");
+  }
+});
+
+p.then(() => console.log("number is divisible by 5"));
+p.catch(() => console.log("number is not divisible by 5"));
+
+p.finally(() => console.log("number validated"));
+
+
+
+----------------
+
+
+const PENDING=0
+const FULLFILLED=1
+const REJECTED=0
+
+function customPromise(executor){
+  let state = PENDING
+  let value = null
+  let handlers = []
+  let catchers = []
+
+  function resolve(result){
+    if(state !== PENDING) return;
+    state = FULLFILLED
+    value = result
+    handlers.forEach((h)=> h(value))
+  }
+
+    function reject(err){
+    if(state !== PENDING) return;
+    state = REJECTED
+    value = err
+    catchers.forEach((c)=> c(value))
+  }
+
+  this.then = function(Sussesscallback){
+    if(state===FULLFILLED){
+      Sussesscallback(value)
+    }else{
+      handlers.push(Sussesscallback)
+    }
+  }
+
+    this.catch = function(failurecallback){
+    if(state===REJECTED){
+      failurecallback(value)
+    }else{
+      catchers.push(failurecallback)
+    }
+  }
+
+  executor( resolve, reject)
+}
+
+const dowork = ( res ,rej) => {
+  let num = Math.floor((Math.random() * 100) + 1);
+  console.log(hi);
+  if(num%5 == 0){
+    console.log(res('number is divisible by 5'))
+    
+  }
+  else{
+    console.log(rej('number is not divisible by 5'))
+  }
+}
+
+let greatMsg = new customPromise(dowork)
+
+greatMsg.then((val)=>{
+  console.log(val)
+})
+
+
+greatMsg.catch((val)=>{
+  console.log(val)
+})

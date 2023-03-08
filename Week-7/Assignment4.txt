@@ -1,0 +1,17 @@
+let input1 =  [5, 10, 3, 2, 50, 80] ;
+let input2 =  [-10, 20] ;
+
+function prices(numarr){
+  let minBuyPrice=numarr[0];
+  let max=0;
+  for(let i=1;i<numarr.length;i++){
+    const sellprice=numarr[i];
+    const profit=sellprice-minBuyPrice;
+    max=Math.max(max,profit);
+    minBuyPrice=Math.min(minBuyPrice,numarr[i]);
+  }
+  return max;
+}
+
+console.log(prices(input1));
+console.log(prices(input2));

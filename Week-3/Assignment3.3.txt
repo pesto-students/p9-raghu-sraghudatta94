@@ -1,0 +1,12 @@
+result will be :count is 0
+
+Increment increment the count but we are getting zero because message string was alredy created as count is 0 before execution only
+As message string was alredy created
+when it call to increament()--it will not print any thing but will increase count by 1
+when it call to increament() secount time --it will not print any thing but will increase count by 2
+when it call to increament() third time --it will not print any thing but will increase count by 3
+when it call to log() it will take count as zero only because even count has been incresed by increment function As message is present outside both log and increment function,it will take parent value as count and print count is 0 output
+And log() is just printing message which is declared outside of both function in createincrement function which is parent of both log and increment function
+
+As message is consideres as in global scope
+

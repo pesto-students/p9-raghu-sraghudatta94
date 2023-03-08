@@ -1,0 +1,56 @@
+*{
+  font:Lato;
+ margin-style: solid;
+  margin-color: red;
+  cellspacing:"0";
+  cellspacing-color:black
+border:none;
+}
+
+#secound{
+bgcolor:black;
+  background-color:black;
+  color:white;
+  text-align:left;
+  font-size:10px;
+  border-top:0;
+  vertical-align:top;
+width:50px;
+height:30%;
+padding-left:30px;
+border:none;
+
+}
+#one{
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 90px;
+}
+#image{
+background-image:url('https://vif1g.csb.app/src/assets/cattyboard.jpg');
+background-size: 100% 100%;
+border:0;
+}
+
+#vertical{
+  vertical-align: top;
+line-height: 30px;
+}
+
+#play{
+  background-color:black;
+color:white;
+height:30%;
+text-align:left;
+text-align:bottom;
+ bottom: 0;
+}
+
+.play1{
+border:0;
+}
+
+#gre{
+background-color:grey;
+}
+

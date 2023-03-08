@@ -1,0 +1,26 @@
+
+
+
+const cache = new Map();
+
+function memoize(...args) {
+
+const key = args.toString();
+if (cache.has(key)){
+console.log('key cache alredy present in memory ' +key);
+return cache.get(key);
+}
+
+let sum=0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum = sum+arguments[i];
+    
+  }
+  cache.set(key,sum);
+return cache.get(key);
+}
+
+console.log(memoize(100,100));
+console.log(memoize(100));
+console.log(memoize(100,200));
+console.log(memoize(100,100));
